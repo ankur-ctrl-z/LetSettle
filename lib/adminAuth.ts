@@ -3,7 +3,7 @@ import { NextRequest } from "next/server";
 
 // Simple admin verification using header token
 // In production, replace with proper JWT/session management
-export function getAdminFromRequest(request: NextR equest): {
+export function getAdminFromRequest(request: NextRequest): {
     isAdmin: boolean;
 } {
     const adminToken = request.headers.get("x-admin-token");
